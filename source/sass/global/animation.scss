@@ -1,0 +1,36 @@
+@keyframes bullet {
+  0% {
+    border-top: 12px solid rgba($white, 0.4);
+    border-left: 12px solid rgba($white, 0.4);
+    border-right: 12px solid rgba($white, 0.4);
+    border-bottom: 12px solid rgba($white, 0.4);
+  }
+
+  25% {
+    border-top: 12px solid $white;
+    border-left: 12px solid rgba($white, 0.4);
+    border-right: 12px solid rgba($white, 0.4);
+    border-bottom: 12px solid rgba($white, 0.4);
+  }
+
+  50% {
+    border-top: 12px solid $white;
+    border-right: 12px solid $white;
+    border-left: 12px solid rgba($white, 0.4);
+    border-bottom: 12px solid rgba($white, 0.4);
+  }
+
+  75% {
+    border-top: 12px solid $white;
+    border-right: 12px solid $white;
+    border-bottom: 12px solid $white;
+    border-left: 12px solid rgba($white, 0.4);
+  }
+
+  100% {
+    border-top: 12px solid $white;
+    border-left: 12px solid $white;
+    border-right: 12px solid $white;
+    border-bottom: 12px solid $white;
+  }
+}

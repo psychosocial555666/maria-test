@@ -1,0 +1,21 @@
+.feedback {
+  background-color: $dark;
+  color: $white;
+}
+
+.feedback__content {
+  padding: 9px 0;
+  display: flex;
+  justify-content: flex-end;
+  a {
+    color: $white;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 140%;
+  }
+}
+
+.feedback__question {
+  margin-right: 24px;
+}
