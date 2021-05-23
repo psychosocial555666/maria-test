@@ -1,0 +1,35 @@
+.production {
+  display: flex;
+  flex-direction: column;
+}
+
+.production__item {
+  display: flex;
+  margin-bottom: 25px;
+
+  img {
+    display: block;
+    margin-right: 20px;
+  }
+
+  h4,
+  span,
+  p {
+    margin: 0;
+    padding: 0;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 170%;
+    margin-bottom: 5px;
+  }
+
+  p {
+    font-size: 12px;
+    line-height: 150%;
+  }
+}
+
+.production__info {
+  display: flex;
+  flex-direction: column;
+}

@@ -1,0 +1,75 @@
+.banner {
+  width: 50%;
+  position: relative;
+  overflow: hidden;
+
+  img {
+    display: block;
+    transform: scale(1.05);
+    transition: transform 0.3s ease-in-out;
+  }
+
+  &:hover {
+    img {
+      transform: scale(1);
+    }
+  }
+}
+
+.banner__label {
+  position: absolute;
+  background-color: $white;
+  bottom: 30px;
+  right: 30px;
+  width: 370px;
+  padding: 29px 28px 28px 35px;
+  box-shadow: 0px 55px 54px rgba(0, 0, 0, 0.15);
+
+  h3 {
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 140%;
+    color: $accent;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 9px;
+  }
+
+  p {
+    font-size: 14px;
+    line-height: 140%;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 26px;
+  }
+
+  span {
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 140%;
+  }
+
+  a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 58px;
+    height: 58px;
+    border-radius: 50%;
+    background-color: $accent;
+    position: absolute;
+    bottom: 28px;
+    right: 25px;
+    transition: 0.3s all ease-in-out;
+
+    &:hover,
+    &:focus {
+      opacity: 0.7;
+      transform: scale(1.2);
+    }
+  }
+
+  svg {
+    stroke: $white;
+  }
+}

@@ -7,12 +7,31 @@
   padding: 9px 0;
   display: flex;
   justify-content: flex-end;
+
   a {
+    display: flex;
+    align-items: center;
     color: $white;
     text-decoration: none;
     font-weight: 600;
     font-size: 12px;
     line-height: 140%;
+    transition: all 0.3s ease-in-out;
+
+    svg {
+      margin-right: 9px;
+      stroke: $white;
+      transition: all 0.3s ease-in-out;
+    }
+
+    &:hover,
+    &:focus {
+      color: $accent;
+
+      svg {
+        stroke: $accent;
+      }
+    }
   }
 }
 

@@ -1,17 +1,17 @@
 .slider {
   display: flex;
   align-items: flex-end;
-  padding: 65px 0 120px;
+  padding: 50px 0 120px;
   position: relative;
 }
 
 .slider__big {
-  width: 65.47%;
+  width: 62.55%;
   margin-right: 30px;
 }
 
 .slider__wrapper {
-  width: 34.53%;
+  width: 37.45%;
   height: 826px;
   position: relative;
   display: flex;
@@ -34,16 +34,21 @@
   z-index: 10;
   top: 0;
   left: 0;
-  padding: 30px;
+  padding: 25px 29px;
   color: $white;
 
   h3 {
     font-weight: bold;
     font-size: 26px;
     line-height: 140%;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 64px;
   }
 
   p {
+    padding: 0;
+    margin: 0;
     padding: 0 100px 0 0;
     margin: 0;
     font-size: 14px;
@@ -59,8 +64,8 @@
     border-radius: 50%;
     background-color: $white;
     position: absolute;
-    bottom: 38px;
-    right: 35px;
+    bottom: 30px;
+    right: 31px;
     transition: 0.3s all ease-in-out;
 
     &:hover,

@@ -1,0 +1,75 @@
+.user-menu {
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  grid-column-gap: 5px;
+  position: relative;
+  left: 13px;
+}
+
+.user-menu__item {
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  padding: 0;
+  margin: 0;
+  border: none;
+  border-radius: 50%;
+  width: 45px;
+  height: 45px;
+
+  transition: 0.3s all ease-in-out;
+
+  svg {
+    position: relative;
+    left: 1px;
+    fill: $black;
+    transition: 0.3s all ease-in-out;
+  }
+
+  &:hover,
+  &:focus {
+    background-color: $accent;
+
+    svg {
+      fill: $white;
+    }
+  }
+}
+
+.user-menu__login {
+  svg {
+    position: relative;
+    bottom: 1px;
+  }
+}
+
+.user-menu__location {
+  width: auto;
+  height: 45px;
+  border-radius: 0;
+  transition: 0.3s all ease-in-out;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 100%;
+  margin-right: 17px;
+
+  svg {
+    fill: none;
+    stroke: $black;
+    margin-right: 11px;
+    transition: 0.3s all ease-in-out;
+  }
+
+  &:hover,
+  &:focus {
+    background-color: transparent;
+    color: $accent;
+
+    svg {
+      fill: transparent;
+      stroke: $accent;
+    }
+  }
+}

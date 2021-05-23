@@ -19,11 +19,423 @@
     <section class="main-heaeder__feedback feedback">
       <div class="container">
         <div class="feedback__content">
-          <a href="#" class="feedback__question">Задать вопрос</a>
-          <a href="" class="feedback__order">Проверить состояние заказа</a>
+          <a href="#" class="feedback__question">
+            <svg width="17" height="16">
+              <use xlink:href="./img/sprite.svg#question"></use>
+            </svg>
+            Задать вопрос
+          </a>
+          <a href="" class="feedback__order">
+            <svg width="17" height="17">
+              <use xlink:href="./img/sprite.svg#order"></use>
+            </svg>
+            Проверить состояние заказа
+          </a>
         </div>
       </div>
     </section>
+    <section class="main-header__menu main-menu">
+      <div class="main-menu__search search">
+        <div class="search__wrapper">
+          <form class="search__field">
+            <input type="text" value="Кухонные шкафы">
+            <button type="submit" class="search__submit button button--filled">Найти</button>
+          </form>
+        </div>
+        <div class="search__overlay">
+          <div class="search__prompt">
+            <div class="search__popular">
+              <h3>Популярные запросы</h3>
+              <ul class="search__list">
+                <li class="search__item">
+                  <a href="#" class="search__link">
+                    <strong>Кухонные шкафы</strong> Мария
+                  </a>
+                </li>
+                <li class="search__item">
+                  <a href="#" class="search__link">
+                    <strong>Кухонные шкафы </strong>Кухонные шкафы серии Микс
+                  </a>
+                </li>
+                <li class="search__item">
+                  <a href="#" class="search__link">
+                    Белые <strong>кухонные шкафы</strong>
+                  </a>
+                </li>
+                <li class="search__item">
+                  <a href="#" class="search__link">
+                    Большие <strong>кухонные шкафы</strong>
+                  </a>
+                </li>
+                <li class="search__item">
+                  <a href="#" class="search__link">
+                    Серия компактный <strong>кухонных шкафов</strong>
+                  </a>
+                </li>
+                <li class="search__item">
+                  <a href="#" class="search__link">
+                    <strong>Кухонные шкафы </strong>для студий
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="search__production production">
+              <h3>Продукция</h3>
+              <article class="production__item">
+                <img width="123" height="91" src="./img/production-1.jpg" alt="Intuit">
+                <div class="production__info">
+                  <h4>Кухня Intuit</h4>
+                  <span>цена от 175 806₽</span>
+                  <p>Богемная лаконичность и глянец модели Intuit достигаются отсутствием ручек </p>
+                </div>
+              </article>
+              <article class="production__item">
+                <img width="123" height="91" src="./img/production-2.jpg" alt="Intuit">
+                <div class="production__info">
+                  <h4>Кухня Rimini</h4>
+                  <span>цена от 204 982₽</span>
+                  <p>Богемная лаконичность и глянец модели Rimini достигаются отсутствием ручек </p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="main-menu__content">
+          <div class="main-menu__contacts contacts">
+            <button class="contacts__toggler main-menu__toggler">
+              <span></span>
+            </button>
+            <a href="tel:88001003131" class="main-menu__tel contacts__tel">8 800 100 31 31 <span class="main-menu--hided"> – по РФ бесплатно</span></a>
+            <div class="contacts__logo main-menu__logo">
+              <img src="./img/logo.png" alt="logo">
+            </div>
+            <a href="#" class="main-menu__call contacts__call button">Заказать проект</a>
+          </div>
+          <div class="main-menu__wrapper">
+            <div class="main-menu__site-menu">
+              <nav class="main-menu__navigation main-menu--hided site-nav">
+                <ul class="site-nav__list">
+                  <li class="site-nav__item">
+                    <a href="#" class="site-nav__link">
+                      Наши салоны
+                    </a>
+                  </li>
+                  <li class="site-nav__item">
+                    <a href="#" class="site-nav__link site-nav__link--drop">
+                      Онлайн сервисы
+                    </a>
+                  </li>
+                  <li class="site-nav__item">
+                    <a href="#" class="site-nav__link site-nav__link--drop">
+                      Услуги
+                    </a>
+                  </li>
+                  <li class="site-nav__item">
+                    <a href="#" class="site-nav__link site-nav__link--drop">
+                      Акции
+                    </a>
+                  </li>
+                  <li class="site-nav__item">
+                    <a href="#" class="site-nav__link">
+                      Сотрудничество
+                    </a>
+                  </li>
+                </ul>
+              </nav>
+              <div class="main-menu__user user-menu">
+                <button class="user-menu__item user-menu__location main-menu--hided">
+                  <svg width="17" height="21">
+                    <use xlink:href="./img/sprite.svg#location"></use>
+                  </svg>
+                  Москва
+                </button>
+                <button class="user-menu__item user-menu__search">
+                  <svg width="20" height="20">
+                    <use xlink:href="./img/sprite.svg#search"></use>
+                  </svg>
+                </button>
+                <button class="user-menu__item user-menu__ring main-menu--hided">
+                  <svg width="18" height="20">
+                    <use xlink:href="./img/sprite.svg#ring"></use>
+                  </svg>
+                </button>
+                <a href="#" class="user-menu__item user-menu__login">
+                  <svg width="18" height="20">
+                    <use xlink:href="./img/sprite.svg#login"></use>
+                  </svg>
+                </a>
+              </div>
+            </div>
+            <div class="main-menu__page-nav page-nav">
+              <ul class="main-menu__list page-nav__list">
+                <li class=" main-menu__item page-nav__item page-nav__item--active">
+                  <a href="#" class=" main-menu__link page-nav__link">
+                    Кухни
+                  </a>
+                </li>
+                <li class=" main-menu__item page-nav__item">
+                  <a href="#" class="main-menu__link page-nav__link">
+                    Шкафы
+                  </a>
+                </li>
+                <li class=" main-menu__item page-nav__item">
+                  <a href="#" class="main-menu__link page-nav__link">
+                    Ванные
+                  </a>
+                </li>
+              </ul>
+              <p class="page-nav__options options main-menu--hided">
+                <span class="options__item">
+                  <a href="#" class="options__link">
+                    Современные
+                  </a>
+                  <span><sup>47</sup> /</span>
+                </span>
+                <span class="options__item">
+                  <a href="#" class="options__link">
+                    Классические
+                  </a>
+                  <span><sup>23</sup> /</span>
+                </span>
+                <span class="options__item">
+                  <a href="#" class="options__link">
+                    Неоклассика
+                  </a>
+                  <span><sup>27</sup> /</span>
+                </span>
+                <span class="options__item">
+                  <a href="#" class="options__link">
+                    KarMa by Karim Rashid
+                  </a>
+                  <span><sup>15</sup> /</span>
+                </span>
+                <span class="options__item">
+                  <a href="#" class="options__link">
+                    Прованс
+                  </a>
+                  <span><sup>18</sup> /</span>
+                </span>
+                <span class="options__item">
+                  <a href="#" class="options__link">
+                    Лофт
+                  </a>
+                  <span><sup>14</sup> /</span>
+                </span>
+                <span class="options__item">
+                  <a href="#" class="options__link">
+                    Скандинавский стиль
+                  </a>
+                  <span><sup>12</sup> /</span>
+                </span>
+                <span class="options__item">
+                  <a href="#" class="options__link">
+                    Хай-тек
+                  </a>
+                  <span><sup>11</sup> /</span>
+                </span>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="main-menu__burger burger-menu">
+        <div class="container">
+          <div class="burger-menu__tabs tabs">
+            <div class="tabs__nav">
+              <button class="tabs__control">О компании</button>
+              <button class="tabs__control">Услуги</button>
+              <button class="tabs__control tabs__control--active">Продукция</button>
+            </div>
+            <ul class="tabs__list">
+              <li class="tabs__item">
+                <h4>Кухни</h4>
+                <ul class="tabs__sublist">
+                  <li class="tabs__subitem">
+                    <a href="#" class="tabs__link">Современные</a>
+                  </li>
+                  <li class="tabs__subitem">
+                    <a href="#" class="tabs__link">Классические</a>
+                  </li>
+                  <li class="tabs__subitem">
+                    <a href="#" class="tabs__link">Неоклассика</a>
+                  </li>
+                  <li class="tabs__subitem">
+                    <a href="#" class="tabs__link">KarMa by Karim Rashid</a>
+                  </li>
+                  <li class="tabs__subitem">
+                    <a href="#" class="tabs__link">Прованс</a>
+                  </li>
+                  <li class="tabs__subitem">
+                    <a href="#" class="tabs__link">Лофт</a>
+                  </li>
+                  <li class="tabs__subitem">
+                    <a href="#" class="tabs__link"> Скандинавский стиль</a>
+                  </li>
+                  <li class="tabs__subitem">
+                    <a href="#" class="tabs__link">Хай-тек</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="tabs__item">
+                <h4>Шкафы</h4>
+                <ul class="tabs__sublist">
+                  <li class="tabs__subitem">
+                    <a href="#" class="tabs__link">Купе</a>
+                  </li>
+                  <li class="tabs__subitem">
+                    <a href="#" class="tabs__link">Распашные</a>
+                  </li>
+                  <li class="tabs__subitem">
+                    <a href="#" class="tabs__link">Гардеробные</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="tabs__item">
+                <h4>Ванные</h4>
+                <ul class="tabs__sublist">
+                  <li class="tabs__subitem">
+                    <a href="#" class="tabs__link">Современные</a>
+                  </li>
+                  <li class="tabs__subitem">
+                    <a href="#" class="tabs__link">Классические</a>
+                  </li>
+                  <li class="tabs__subitem">
+                    <a href="#" class="tabs__link">Сантехника</a>
+                  </li>
+                  <li class="tabs__subitem">
+                    <a href="#" class="tabs__link">Оборудование</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="tabs__item">
+                <h4>Мебель</h4>
+                <ul class="tabs__sublist">
+                  <li class="tabs__subitem">
+                    <a href="#" class="tabs__link">Для кухни</a>
+                  </li>
+                  <li class="tabs__subitem">
+                    <a href="#" class="tabs__link">Столовая группа</a>
+                  </li>
+                  <li class="tabs__subitem">
+                    <a href="#" class="tabs__link">Гостиная</a>
+                  </li>
+                  <li class="tabs__subitem">
+                    <a href="#" class="tabs__link">Спальня</a>
+                  </li>
+                  <li class="tabs__subitem">
+                    <a href="#" class="tabs__link">Для ванной</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="tabs__item">
+                <h4>Бытовая техника</h4>
+                <ul class="tabs__sublist">
+                  <li class="tabs__subitem">
+                    <a href="#" class="tabs__link">Варочные панели</a>
+                  </li>
+                  <li class="tabs__subitem">
+                    <a href="#" class="tabs__link">Духовые шкафы</a>
+                  </li>
+                  <li class="tabs__subitem">
+                    <a href="#" class="tabs__link">Микроволновые печи</a>
+                  </li>
+                  <li class="tabs__subitem">
+                    <a href="#" class="tabs__link">Посудомоечные машины</a>
+                  </li>
+                  <li class="tabs__subitem">
+                    <a href="#" class="tabs__link">Холодильники</a>
+                  </li>
+                  <li class="tabs__subitem">
+                    <a href="#" class="tabs__link">Стиральные машины</a>
+                  </li>
+                  <li class="tabs__subitem">
+                    <a href="#" class="tabs__link">Кофемашины</a>
+                  </li>
+                  <li class="tabs__subitem">
+                    <a href="#" class="tabs__link">Компактные приборы</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="tabs__item">
+                <h4>Оформление интерьера</h4>
+                <ul class="tabs__sublist">
+                  <li class="tabs__subitem">
+                    <a href="#" class="tabs__link">Вытяжки </a>
+                  </li>
+                  <li class="tabs__subitem">
+                    <a href="#" class="tabs__link">Мойки</a>
+                  </li>
+                  <li class="tabs__subitem">
+                    <a href="#" class="tabs__link">Смесители</a>
+                  </li>
+                  <li class="tabs__subitem">
+                    <a href="#" class="tabs__link">Посуда</a>
+                  </li>
+                  <li class="tabs__subitem">
+                    <a href="#" class="tabs__link">Настенные покрытия</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="tabs__item">
+                <h4>B2B</h4>
+                <ul class="tabs__sublist">
+                  <li class="tabs__subitem">
+                    <a href="#" class="tabs__link">Кухни </a>
+                  </li>
+                  <li class="tabs__subitem">
+                    <a href="#" class="tabs__link">Стойки ресепшн</a>
+                  </li>
+                  <li class="tabs__subitem">
+                    <a href="#" class="tabs__link">Барные стойки</a>
+                  </li>
+                  <li class="tabs__subitem">
+                    <a href="#" class="tabs__link">Ванные</a>
+                  </li>
+                  <li class="tabs__subitem">
+                    <a href="#" class="tabs__link">Туалетные комнаты</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="burger-menu__banners">
+          <article class="burger-menu__banner banner">
+            <img src="./img/banner-1.jpg" alt="">
+            <div class="banner__label">
+              <h3>Шкаф-купе Mix</h3>
+              <p>Дуэт дизайна и практичности сочетающиеся в одной модели</p>
+              <span>от 79 125₽</span>
+              <a href="#">
+                <svg width="9" height="18">
+                  <use xlink:href="./img/sprite.svg#arrow-right"></use>
+                </svg>
+                <span class="visually-hidden">Перейти</span>
+              </a>
+            </div>
+          </article>
+          <article class="burger-menu__banner banner">
+            <img src="./img/banner-2.jpg" alt="">
+            <div class="banner__label">
+              <h3>Модель Nicolle</h3>
+              <p>Изысканность классики в сочетании со строгостью линий модерна</p>
+              <span>от 22 400₽</span>
+              <a href="#">
+                <svg width="9" height="18">
+                  <use xlink:href="./img/sprite.svg#arrow-right"></use>
+                </svg>
+                <span class="visually-hidden">Перейти</span>
+              </a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+  </header>
+
+  <main>
     <section class="slider">
       <div class="swiper-container slider__big">
         <div class="swiper-wrapper">
@@ -147,9 +559,69 @@
           </div>
         </div>
       </div>
-      
     </section>
-  </header>
+
+    <section class="catalog">
+      <div class="container">
+        <div class="catalog__content">
+          <h2>Создайте интерьер в едином стиле вместе с "Марией"</h2>
+          <p>Мебельная фабрика "Мария" — меблировка "под ключ" в едином стиле по индивиальному проекту. Кухня, гостиная,
+            ванная — в коллекциях новинок 2021 года!</p>
+          <div class="catalog__wrapper">
+            <ul class="catalog__list">
+              <li class="catalog__item">
+                <a href="#" class="catalog__link">
+                  <article class="catalog__product">
+                    <div class="catalog__picture">
+                      <img src="./img/kitchen-1.jpg" alt="kitchen-1">
+                    </div>
+                    <h3>Кухня Jazz</h3>
+                    <p>Кухня + техника + столовая группа</p>
+                  </article>
+                </a>
+              </li>
+              <li class="catalog__item">
+                <a href="#" class="catalog__link">
+                  <article class="catalog__product">
+                    <div class="catalog__picture">
+                      <img src="./img/kitchen-3.jpg" alt="kitchen-1">
+                    </div>
+                    <h3>Кухня Jazz</h3>
+                    <p>Кухня + техника + столовая группа</p>
+                  </article>
+                </a>
+              </li>
+            </ul>
+            <ul class="catalog__list">
+              <li class="catalog__item">
+                <a href="#" class="catalog__link">
+                  <article class="catalog__product">
+                    <div class="catalog__picture">
+                      <img src="./img/kitchen-2.jpg" alt="kitchen-1">
+                    </div>
+                    <h3>Белая кухня WHITE</h3>
+                    <p>Кухня + техника + столовая группа</p>
+                  </article>
+                </a>
+              </li>
+              <li class="catalog__item">
+                <a href="#" class="catalog__link">
+                  <article class="catalog__product">
+                    <div class="catalog__picture">
+                      <img src="./img/kitchen-4.jpg" alt="kitchen-1">
+                    </div>
+                    <h3>Белая кухня WHITE</h3>
+                    <p>Кухня + техника + столовая группа</p>
+                  </article>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <button class="catalog__load button">Показать еще</button>
+        </div>
+      </div>
+    </section>
+  </main>
   <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
   <script src="./js/script.js"></script>
 </body>

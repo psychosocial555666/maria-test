@@ -1,0 +1,32 @@
+.button {
+  font-weight: 500;
+  font-size: 14px;
+  color: $accent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 9px 28px 10px;
+  text-decoration: none;
+  border-radius: 33px;
+  border: 2px solid $accent;
+  cursor: pointer;
+  background-color: transparent;
+  transition: background 0.3s ease-in-out;
+
+  &:hover,
+  &:focus {
+    background-color: $accent;
+    color: $white;
+  }
+}
+
+.button--filled {
+  background-color: $accent;
+  color: $white;
+
+  &:hover,
+  &:focus {
+    background-color: $white;
+    color: $accent;
+  }
+}

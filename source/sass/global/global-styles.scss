@@ -14,6 +14,10 @@ body {
   font-family: $main-font;
 }
 
+.scroll-block {
+  overflow: hidden;
+}
+
 .container {
   max-width: 1350px;
   padding: 0 30px;
@@ -51,11 +55,55 @@ body {
   height: 24px;
   opacity: 1;
   background-color: rgba($white, 0.4);
-  transform: rotate(45deg);
-  animation: bullet 10.5s linear;
+
+  .circle {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    overflow: hidden;
+    display: flex;
+    position: relative;
+  }
+
+  .circle__half {
+    width: 50%;
+    height: 100%;
+
+    background: rgba($white, 0.4);
+    overflow: hidden;
+
+    &::before {
+      width: 100%;
+      height: 100%;
+      background: $white;
+
+      content: '';
+      display: block;
+      animation: rotating 5.2s linear 5.2s forwards;
+    }
+  }
+
+  .circle__half_left {
+    &::before {
+      border-radius: 50% 0 0 50%;
+      transform: rotate(-180deg);
+      transform-origin: 100% 50%;
+    }
+  }
+
+  .circle__half_right {
+    &::before {
+      border-radius: 0 50% 50% 0;
+      transform: rotate(0deg);
+      transform-origin: 0 50%;
+      animation-delay: 0s;
+    }
+  }
 }
 
-.swiper-container-horizontal>.swiper-pagination-bullets, .swiper-pagination-custom, .swiper-pagination-fraction {
+.swiper-container-horizontal>.swiper-pagination-bullets,
+.swiper-pagination-custom,
+.swiper-pagination-fraction {
   bottom: 60px;
   left: 75px;
   width: 100%;
