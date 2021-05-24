@@ -47,8 +47,12 @@
   background-color: $white;
   z-index: 100;
 
-  .main-menu--hided {
+  .main-menu__hided {
     display: none;
+  }
+
+  .main-menu__toggler {
+    top: 19px;
   }
 
   .main-menu__content {
@@ -101,6 +105,7 @@
 
   .main-menu__site-menu {
     padding-bottom: 0;
+    margin-bottom: 0;
     border: none;
   }
 }
@@ -115,13 +120,13 @@
   z-index: 100;
   padding-top: 52px;
   padding-bottom: 0;
-  animation: growDown 0.3s linear;
 
   .main-menu__burger {
     display: block;
+    animation: fadeIn 0.3s linear;
   }
 
-  .main-menu--hided {
+  .main-menu__hided {
     display: none;
   }
 
@@ -138,29 +143,52 @@
 
   .main-menu__tel {
     margin-bottom: 0;
-    padding-top: 0;
+    position: relative;
+    top: -11px;
+    animation: fadeIn 0.3s linear;
 
     span {
       display: inline;
     }
   }
 
+  .main-menu__user {
+    left: 10px;
+    top: -7px;
+  }
+
+  .main-menu__location {
+    display: flex;
+  }
+
+  .main-menu__ring {
+    display: flex;
+  }
+
   .main-menu__logo {
     margin-bottom: 0;
-    margin-right: 68px;
+    margin-right: 154px;
     top: 0;
+    animation: fadeIn 0.3s linear;
+
+    img {
+      width: 181px;
+      height: 51px;
+    }
   }
 
   .main-menu__call {
     position: absolute;
-    top: 8px;
-    right: 120px;
+    top: 2px;
+    right: 283px;
+    animation: fadeIn 0.3s linear;
   }
 
   .main-menu__wrapper {
     display: flex;
     flex-direction: row-reverse;
     justify-content: space-between;
+    animation: fadeIn 0.3s linear;
   }
 
   .main-menu__page-nav {
@@ -179,15 +207,15 @@
 
   .main-menu__site-menu {
     padding-bottom: 0;
+    margin-bottom: 0;
     border: none;
   }
 
   .main-menu__toggler {
     height: 18px;
-    overflow: auto;
 
     span {
-      left: -50px;
+      left: -25px;
     }
 
     &::before {

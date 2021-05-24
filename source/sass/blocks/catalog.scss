@@ -37,7 +37,7 @@
 .catalog__item {
   border-bottom: 1px solid $black;
   margin-bottom: 45px;
-  transition: borderBottom 0.3s ease-in-out;
+  transition: borderbottom 0.3s ease-in-out;
 
   &:hover,
   &:focus {
@@ -85,6 +85,8 @@
 
   img {
     display: block;
+    width: 100%;
+    height: 100%;
     transform: scale(1.05);
     transition: transform 0.3s ease-in-out;
   }
@@ -92,4 +94,9 @@
 
 .catalog__load {
   margin: 0 auto;
+  position: relative;
+  width: 179px;
+  height: 39px;
+  left: 0;
+  top: -5px;
 }

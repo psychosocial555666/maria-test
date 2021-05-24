@@ -12,7 +12,8 @@
   font-weight: 600;
   font-size: 20px;
   line-height: 150%;
-  margin-right: 65px;
+  margin-left: -2px;
+  margin-right: 61px;
   position: relative;
   transition: color 0.3s ease-in-out;
 
@@ -43,7 +44,7 @@
   display: grid;
   grid-template-columns: repeat(7, auto);
   grid-column-gap: 49px;
-  margin-bottom: 90px;
+  margin-bottom: 74px;
 }
 
 .tabs__item {

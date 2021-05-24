@@ -18,7 +18,7 @@
   top: 14px;
   left: -62px;
   overflow: hidden;
-  transition: all 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out;
 
   span {
     position: absolute;
@@ -53,8 +53,7 @@
     transition: all 0.3s ease-in-out 0.3s;
   }
 
-  &:hover,
-  &:focus {
+  &:hover {
     transform: scale(1.1);
   }
 }
@@ -97,5 +96,3 @@
   position: relative;
   top: -10px;
 }
-
-

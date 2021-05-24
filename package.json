@@ -1,7 +1,7 @@
 {
-  "name": "Escape_room",
+  "name": "Maria",
   "version": "1.0.0",
-  "description": "Стартовый шаблон сборки Лиги А",
+  "description": "Тестовое задание для NKH Studio",
   "devDependencies": {
     "@htmlacademy/editorconfig-cli": "1.x",
     "autoprefixer": "9.5.x",

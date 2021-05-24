@@ -3,9 +3,16 @@
   outline: none;
 }
 
+::-webkit-scrollbar {
+  width: 0;
+  background: transparent;
+}
+
 html {
   scroll-behavior: smooth;
   height: 100%;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
 }
 
 body {
@@ -77,7 +84,7 @@ body {
       height: 100%;
       background: $white;
 
-      content: '';
+      content: "";
       display: block;
       animation: rotating 5.2s linear 5.2s forwards;
     }
@@ -101,7 +108,7 @@ body {
   }
 }
 
-.swiper-container-horizontal>.swiper-pagination-bullets,
+.swiper-container-horizontal > .swiper-pagination-bullets,
 .swiper-pagination-custom,
 .swiper-pagination-fraction {
   bottom: 60px;
